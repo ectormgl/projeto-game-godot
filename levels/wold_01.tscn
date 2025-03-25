@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://d1sn13wgov80i"]
+[gd_scene load_steps=9 format=3 uid="uid://d1sn13wgov80i"]
 
 [ext_resource type="Texture2D" uid="uid://cax34cp6uyslc" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_8qxki"]
 [ext_resource type="Texture2D" uid="uid://cg2npgdjky0ov" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="2_dyo7p"]
 [ext_resource type="PackedScene" uid="uid://bmes61g0ofoku" path="res://actors/player.tscn" id="3_t376a"]
 [ext_resource type="Script" uid="uid://gxbp57crd4k8" path="res://actors/player.gd" id="4_tmbdj"]
+[ext_resource type="PackedScene" uid="uid://2xy3gcdc4b2u" path="res://powers/power_fire.tscn" id="5_vq0rl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u4k2w"]
 texture = ExtResource("1_8qxki")
@@ -103,5 +104,6 @@ layer_0/tile_data = PackedInt32Array(1900550, 262144, 1, 1900551, 262144, 1, 190
 layer_1/name = "trees"
 
 [node name="player" parent="." instance=ExtResource("3_t376a")]
-position = Vector2(17, 454)
+position = Vector2(164, 292)
 script = ExtResource("4_tmbdj")
+poder_scene = ExtResource("5_vq0rl")
